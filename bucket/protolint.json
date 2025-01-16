@@ -1,16 +1,16 @@
 {
-    "version": "0.35.2",
+    "version": "0.52.0",
     "description": "A pluggable linter and fixer to enforce Protocol Buffer style and conventions",
     "homepage": "https://github.com/yoheimuta/protolint",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/yoheimuta/protolint/releases/download/v0.35.2/protolint_0.35.2_Windows_x86_64.tar.gz",
-            "hash": "1f1f27708c53133b8392a737f10597b303d4389ee8dbd7e0f797470144bccdad"
+            "url": "https://github.com/yoheimuta/protolint/releases/download/v0.52.0/protolint_0.52.0_windows_amd64.tar.gz",
+            "hash": "c698733ab195c1270eb220ca980afb8fad9a60f51ad48ed766ac0648925397dd"
         },
-        "32bit": {
-            "url": "https://github.com/yoheimuta/protolint/releases/download/v0.35.2/protolint_0.35.2_Windows_i386.tar.gz",
-            "hash": "43d20dca8a4294cdf011e55a8310af3a40ad2be97ba6a1ac067daa320ca7ae1a"
+        "arm64": {
+            "url": "https://github.com/yoheimuta/protolint/releases/download/v0.52.0/protolint_0.52.0_windows_arm64.tar.gz",
+            "hash": "c06296eb467198c07c117e9248e3f726eae40f755ab2dfb52aaa096aec7626ba"
         }
     },
     "bin": [
@@ -21,10 +21,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/yoheimuta/protolint/releases/download/v$version/protolint_$version_Windows_x86_64.tar.gz"
+                "url": "https://github.com/yoheimuta/protolint/releases/download/v$version/protolint_$version_windows_amd64.tar.gz"
             },
-            "32bit": {
-                "url": "https://github.com/yoheimuta/protolint/releases/download/v$version/protolint_$version_Windows_i386.tar.gz"
+            "arm64": {
+                "url": "https://github.com/yoheimuta/protolint/releases/download/v$version/protolint_$version_windows_arm64.tar.gz"
             }
         },
         "hash": {

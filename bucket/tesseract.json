@@ -1,7 +1,7 @@
 {
-    "version": "5.0.0.20211201",
+    "version": "5.5.0.20241111",
     "description": "Open Source OCR Engine",
-    "homepage": "https://github.com/UB-Mannheim/tesseract/wiki",
+    "homepage": "https://tesseract-ocr.github.io",
     "license": "Apache-2.0",
     "notes": [
         "Recognition data files can be installed via \"scoop install tesseract-languages\"",
@@ -12,13 +12,20 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-v5.0.0.20211201.exe#/dl.7z",
-            "hash": "b7727a49b91f749320ce7d50051dec3f0395abdea0f76a8f0a1c468b23473c88"
-        },
-        "32bit": {
-            "url": "https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w32-setup-v5.0.0.20211201.exe#/dl.7z",
-            "hash": "dc7fd52497d93445dc41776e83d67ad35e2f5c4cabf6ca9abc052ee01352700e"
+            "url": "https://github.com/tesseract-ocr/tesseract/releases/download/5.5.0/tesseract-ocr-w64-setup-5.5.0.20241111.exe#/dl.7z",
+            "hash": "f3fc4236425b690c8be756f35793f77394ee004be0a6460a440c754d892f68bc"
         }
+    },
+    "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
+    "post_install": [
+        "$langdir = versiondir tesseract-languages current $global",
+        "if (Test-Path $langdir) {",
+        "   Set-EnvVar -Name TESSDATA_PREFIX -Value $langdir -Global:$global",
+        "}"
+    ],
+    "env_set": {
+        "SCROLLVIEW_PATH": "$persist_dir\\tessdata",
+        "TESSDATA_PREFIX": "$persist_dir\\tessdata"
     },
     "bin": [
         "ambiguous_words.exe",
@@ -38,28 +45,15 @@
         "unicharset_extractor.exe",
         "wordlist2dawg.exe"
     ],
-    "env_set": {
-        "TESSDATA_PREFIX": "$persist_dir\\tessdata",
-        "SCROLLVIEW_PATH": "$persist_dir\\tessdata"
-    },
     "persist": "tessdata",
-    "post_install": [
-        "$langdir = versiondir tesseract-languages current $global",
-        "if (Test-Path $langdir) {",
-        "   env \"TESSDATA_PREFIX\" $global $langdir",
-        "}"
-    ],
     "checkver": {
-        "url": "https://digi.bib.uni-mannheim.de/tesseract/?C=M;O=D",
-        "regex": "tesseract-ocr-w32-setup-v([\\w.-]+)\\.exe"
+        "github": "https://github.com/tesseract-ocr/tesseract",
+        "regex": "tesseract-ocr-w64-setup-([\\d.]+).exe"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-v$version.exe#/dl.7z"
-            },
-            "32bit": {
-                "url": "https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w32-setup-v$version.exe#/dl.7z"
+                "url": "https://github.com/tesseract-ocr/tesseract/releases/download/$matchHead/tesseract-ocr-w64-setup-$version.exe#/dl.7z"
             }
         }
     }

@@ -1,23 +1,23 @@
 {
-    "version": "7.59.2",
+    "version": "10.0.2",
     "description": "An essential part of using Heroku, which can perform nearly any Heroku-related task right from your terminal.",
     "homepage": "https://devcenter.heroku.com/articles/heroku-cli",
     "license": "ISC",
     "architecture": {
         "64bit": {
-            "url": "https://cli-assets.heroku.com/heroku-win32-x64.tar.xz#/dl.xz",
-            "hash": "40dc2ce387cb936a9cf98ceb470fe6bb6f4d8f4576abc81fedac1434b56d2fbc"
+            "url": "https://cli-assets.heroku.com/versions/10.0.2/7947ef4/heroku-v10.0.2-7947ef4-win32-x64.tar.xz#/dl.xz",
+            "hash": "9fcfd639fff45738881034969e49f0d8adb0ba2ca3ed72f0cf67bd23e18aa7c1"
         },
         "32bit": {
-            "url": "https://cli-assets.heroku.com/heroku-win32-x86.tar.xz#/dl.xz",
-            "hash": "5cc00a9311238843c250432109628691604650b091e3eb9dd862bc0dad149f00"
+            "url": "https://cli-assets.heroku.com/versions/10.0.2/7947ef4/heroku-v10.0.2-7947ef4-win32-x86.tar.xz#/dl.xz",
+            "hash": "ed823b68e9a65e7585862b5f2e5c61cff8ae975a8b9d20a6d439089779c0c1f3"
         }
     },
     "pre_install": [
         "Invoke-ExternalCommand (Get-HelperPath '7zip') -ArgumentList @(",
         "    'x'",
         "    \"$dir\\dl\"",
-        "    \"-o`\"$dir\\dlo`\"\"",
+        "    \"-o$dir\\dlo\"",
         "    '-bso0'",
         "    '-bd'",
         "    '-bse0'",
@@ -27,23 +27,24 @@
     ],
     "bin": "bin\\heroku.cmd",
     "checkver": {
-        "url": "https://cli-assets.heroku.com/version",
-        "jsonpath": "$.version"
+        "url": "https://cli-assets.heroku.com/channels/stable/heroku-win32-x64-buildmanifest",
+        "jsonpath": "$.xz",
+        "regex": "heroku-v([\\d.]+)-(?<commit>\\w+)-win32"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://cli-assets.heroku.com/heroku-win32-x64.tar.xz#/dl.xz",
+                "url": "https://cli-assets.heroku.com/versions/$version/$matchCommit/heroku-v$version-$matchCommit-win32-x64.tar.xz#/dl.xz",
                 "hash": {
-                    "url": "https://cli-assets.heroku.com/win32-x64",
-                    "jsonpath": "$.sha256xz"
+                    "url": "https://cli-assets.heroku.com/channels/stable/heroku-win32-x64-buildmanifest",
+                    "regex": "sha256xz.*$sha256"
                 }
             },
             "32bit": {
-                "url": "https://cli-assets.heroku.com/heroku-win32-x86.tar.xz#/dl.xz",
+                "url": "https://cli-assets.heroku.com/versions/$version/$matchCommit/heroku-v$version-$matchCommit-win32-x86.tar.xz#/dl.xz",
                 "hash": {
-                    "url": "https://cli-assets.heroku.com/win32-x86",
-                    "jsonpath": "$.sha256xz"
+                    "url": "https://cli-assets.heroku.com/channels/stable/heroku-win32-x86-buildmanifest",
+                    "regex": "sha256xz.*$sha256"
                 }
             }
         }

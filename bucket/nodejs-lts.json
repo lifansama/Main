@@ -1,35 +1,41 @@
 {
-    "version": "16.13.1",
+    "version": "22.13.0",
     "description": "As an asynchronous event driven JavaScript runtime, Node is designed to build scalable network applications. (Long Term Support)",
     "homepage": "https://nodejs.org",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://nodejs.org/dist/v16.13.1/node-v16.13.1-win-x64.7z",
-            "hash": "e4e06ca94b46522096cbf3baa836dbb8af8b44d6c0db0ad577881dc9edf1d252",
-            "extract_dir": "node-v16.13.1-win-x64"
+            "url": "https://nodejs.org/dist/v22.13.0/node-v22.13.0-win-x64.7z",
+            "hash": "a81087ab40a4336908b7cfd3473b9571549b045f38fcdb7181cca979ceadd018",
+            "extract_dir": "node-v22.13.0-win-x64"
         },
         "32bit": {
-            "url": "https://nodejs.org/dist/v16.13.1/node-v16.13.1-win-x86.7z",
-            "hash": "439728a9c2d708e24669897d40b64b02e8d4e55c2e8c5e6f90552e1f20cf534e",
-            "extract_dir": "node-v16.13.1-win-x86"
+            "url": "https://nodejs.org/dist/v22.13.0/node-v22.13.0-win-x86.7z",
+            "hash": "e7325b3da93357965f756b5473bbf3e8dccaaf72f5607ac58e2aae5eedcc0d84",
+            "extract_dir": "node-v22.13.0-win-x86"
+        },
+        "arm64": {
+            "url": "https://nodejs.org/dist/v22.13.0/node-v22.13.0-win-arm64.7z",
+            "hash": "5f441e2f3da291051971345e1f8bf16bdc1314985fb2dac806217463d99d176a",
+            "extract_dir": "node-v22.13.0-win-arm64"
         }
     },
-    "persist": [
-        "bin",
-        "cache"
+    "post_install": [
+        "# Set npm prefix to install modules inside bin and npm cache so they persist",
+        "Set-Content -Value \"prefix=$persist_dir\\bin`ncache=$persist_dir\\cache\" -Path \"$dir\\node_modules\\npm\\npmrc\""
     ],
     "env_add_path": [
         "bin",
         "."
     ],
-    "post_install": [
-        "# Set npm prefix to install modules inside bin and npm cache so they persist",
-        "Set-Content -Value \"prefix=$persist_dir\\bin`ncache=$persist_dir\\cache\" -Path \"$dir\\node_modules\\npm\\npmrc\""
+    "persist": [
+        "bin",
+        "cache"
     ],
     "checkver": {
-        "url": "https://nodejs.org/en/download/",
-        "regex": "LTS Version: <strong>([\\d.]+)</strong>"
+        "url": "https://nodejs.org/dist/index.json",
+        "jsonpath": "$..[?(@.lts != false)].version",
+        "regex": "v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
@@ -40,6 +46,10 @@
             "32bit": {
                 "url": "https://nodejs.org/dist/v$version/node-v$version-win-x86.7z",
                 "extract_dir": "node-v$version-win-x86"
+            },
+            "arm64": {
+                "url": "https://nodejs.org/dist/v$version/node-v$version-win-arm64.7z",
+                "extract_dir": "node-v$version-win-arm64"
             }
         },
         "hash": {

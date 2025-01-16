@@ -1,33 +1,33 @@
 {
-    "version": "2.13.7",
+    "version": "3.6.2",
     "description": "A modern multi-paradigm programming language designed to express common programming patterns in a concise, elegant, and type-safe way.",
     "homepage": "https://www.scala-lang.org/",
     "license": "BSD-3-Clause",
+    "notes": [
+        "Scala 3 has been installed. If you haven't migrated yet, install versions/scala2.",
+        "Or follow the migration guide: https://docs.scala-lang.org/scala3/guides/migration/compatibility-intro.html"
+    ],
     "suggest": {
-        "JDK": [
-            "java/oraclejdk",
-            "java/openjdk"
-        ]
+        "JDK": "java/openjdk"
     },
-    "url": "https://downloads.typesafe.com/scala/2.13.7/scala-2.13.7.zip",
-    "hash": "a52cd39d0c13748b36a389b87ffbf5c4b6bc098af9ea745cf3c874867fd91976",
-    "extract_dir": "scala-2.13.7",
+    "url": "https://github.com/scala/scala3/releases/download/3.6.2/scala3-3.6.2.msi",
+    "hash": "073d338a86592a1042afc9661b7d6076d799064e98169a7f456d8744b7d03c15",
+    "extract_dir": "PFiles\\Scala",
     "bin": [
-        "bin\\fsc.bat",
         "bin\\scala.bat",
         "bin\\scalac.bat",
-        "bin\\scaladoc.bat",
-        "bin\\scalap.bat"
+        "bin\\scaladoc.bat"
     ],
     "env_set": {
         "SCALA_HOME": "$dir"
     },
     "checkver": {
-        "url": "https://www.scala-lang.org/download/scala2.html",
-        "regex": "scala-([\\d.]+)\\.zip"
+        "github": "https://github.com/scala/scala3/"
     },
     "autoupdate": {
-        "url": "https://downloads.typesafe.com/scala/$version/scala-$version.zip",
-        "extract_dir": "scala-$version"
+        "url": "https://github.com/scala/scala3/releases/download/$version/scala3-$version.msi",
+        "hash": {
+            "url": "$url.sha256"
+        }
     }
 }

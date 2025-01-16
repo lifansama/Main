@@ -1,12 +1,12 @@
 {
-    "version": "2.6.1",
+    "version": "2.8.3",
     "description": "Saves complete web pages as a single HTML file.",
     "homepage": "https://github.com/Y2Z/monolith",
     "license": "Unlicense",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Y2Z/monolith/releases/download/v2.6.1/monolith.exe",
-            "hash": "b80c1b69879e704368698511526904d4848fe28e5c22f91411ee9a5f57e2d4a5"
+            "url": "https://github.com/Y2Z/monolith/releases/download/v2.8.3/monolith.exe",
+            "hash": "ae79e933b9a03363920d365c38312b57dd522da226b4d225697551b3acb5945f"
         }
     },
     "bin": "monolith.exe",

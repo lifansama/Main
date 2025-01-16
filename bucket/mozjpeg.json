@@ -1,5 +1,5 @@
 {
-    "version": "4.0.3",
+    "version": "4.1.5",
     "description": "Improved JPEG encoder",
     "homepage": "https://github.com/mozilla/mozjpeg",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/garyzyg/mozjpeg-windows/releases/download/4.0.3/mozjpeg-x64.zip",
-            "hash": "c8bfba0c9316cddb6be718b09a87a5e8b30e9eb343f091694c4b6a057bd0e40e"
+            "url": "https://github.com/garyzyg/mozjpeg-windows/releases/download/4.1.5/mozjpeg-x64.zip",
+            "hash": "176ef4f632b09dca449e27bc11df090c1222528dff9f583a14bbd026a0c8eb2f"
         },
         "32bit": {
-            "url": "https://github.com/garyzyg/mozjpeg-windows/releases/download/4.0.3/mozjpeg-x86.zip",
-            "hash": "5bd7b47569bf49c063e09b9410479bb847b6e3a03ae4ad627a15cce27b51f0a2"
+            "url": "https://github.com/garyzyg/mozjpeg-windows/releases/download/4.1.5/mozjpeg-x86.zip",
+            "hash": "ef5c30b892b48e1c4bf82752ecbea1280e03d285ede8f1d3d47cb939f4ca150a"
         }
     },
     "bin": [
@@ -34,7 +34,9 @@
             "jpegtran"
         ]
     ],
-    "checkver": "github",
+    "checkver": {
+        "github": "https://github.com/garyzyg/mozjpeg-windows"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {

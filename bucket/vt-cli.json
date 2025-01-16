@@ -1,16 +1,16 @@
 {
-    "version": "0.9.8",
+    "version": "1.0.1",
     "description": "Tool for interacting with VirusTotal",
     "homepage": "https://github.com/VirusTotal/vt-cli",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/VirusTotal/vt-cli/releases/download/0.9.8/Windows64.zip",
-            "hash": "a2fc2e5d3f6f3d3c85d60c14ba4c23c4c7971ed0e128863612c2101880769eb6"
+            "url": "https://github.com/VirusTotal/vt-cli/releases/download/1.0.1/Windows64.zip",
+            "hash": "dd08ed6653c2e22fa085e651e624a2554535dcfa1483b4f3610698f4295bb8c9"
         },
         "32bit": {
-            "url": "https://github.com/VirusTotal/vt-cli/releases/download/0.9.8/Windows32.zip",
-            "hash": "89086b67da37f28c3d192c29d2e861024d4f0b0bed1d0d6d32a084a13f3f3db8"
+            "url": "https://github.com/VirusTotal/vt-cli/releases/download/1.0.1/Windows32.zip",
+            "hash": "45c2aeb98fae8664f2b25b8db8322e87de0578092581d6e941cfb2742e484368"
         }
     },
     "bin": "vt.exe",

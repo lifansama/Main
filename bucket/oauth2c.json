@@ -1,0 +1,31 @@
+{
+    "version": "1.17.1",
+    "description": "A command-line tool for interacting with OAuth 2.0 authorization servers.",
+    "homepage": "https://github.com/cloudentity/oauth2c",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/cloudentity/oauth2c/releases/download/v1.17.1/oauth2c_1.17.1_Windows_x86_64.tar.gz",
+            "hash": "04dcd6e6e7cb3fea45b33c25f5764e4f3d1ea3c5aade4153a4d1917adc8e5949"
+        },
+        "arm64": {
+            "url": "https://github.com/cloudentity/oauth2c/releases/download/v1.17.1/oauth2c_1.17.1_Windows_arm64.tar.gz",
+            "hash": "9dc1351614dd66346a43181357aeaa1c4192a1707cfe345b62bbd52a6418d84a"
+        }
+    },
+    "bin": "oauth2c.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/cloudentity/oauth2c/releases/download/v$version/oauth2c_$version_Windows_x86_64.tar.gz"
+            },
+            "arm64": {
+                "url": "https://github.com/cloudentity/oauth2c/releases/download/v$version/oauth2c_$version_Windows_arm64.tar.gz"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/checksums.txt"
+        }
+    }
+}

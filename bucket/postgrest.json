@@ -1,15 +1,16 @@
 {
-    "version": "9.0.0",
+    "version": "12.2.3",
     "description": "REST API for any Postgres database",
     "homepage": "https://postgrest.org",
     "license": "MIT",
     "suggest": {
         "PostgreSQL": "postgresql"
     },
+    "depends": "psqlodbc",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/PostgREST/postgrest/releases/download/v9.0.0/postgrest-v9.0.0-windows-x64.zip",
-            "hash": "5697e646d49cf902bf08c6f5b12fe327edd7b1351058023d2785115b3a1f88d7",
+            "url": "https://github.com/PostgREST/postgrest/releases/download/v12.2.3/postgrest-v12.2.3-windows-x64.zip",
+            "hash": "a850cd1cf5b208972f4db2803656c645436ad333882480685e052d45706c1966",
             "extract_dir": "artifacts\\postgrest-windows-x64"
         }
     },

@@ -1,12 +1,12 @@
 {
-    "version": "0.166.1",
+    "version": "0.259.0",
     "description": "A static type checker for JavaScript code",
-    "homepage": "https://flowtype.org/",
+    "homepage": "https://flow.org/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/facebook/flow/releases/download/v0.166.1/flow-win64-v0.166.1.zip",
-            "hash": "6ab551d9a3e4ef9c72eb75511b104a7cf2e8a31a402f751c55f1c702be2b783b"
+            "url": "https://github.com/facebook/flow/releases/download/v0.259.0/flow-win64-v0.259.0.zip",
+            "hash": "cab13f5a9c42dd6e826bba1f9ac1a576f8bdc473da82b0e61fecbddb74a73612"
         }
     },
     "extract_dir": "flow",

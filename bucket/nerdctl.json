@@ -1,0 +1,24 @@
+{
+    "version": "2.0.2",
+    "description": "Docker-compatible CLI for containerd",
+    "homepage": "https://github.com/containerd/nerdctl",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/containerd/nerdctl/releases/download/v2.0.2/nerdctl-2.0.2-windows-amd64.tar.gz",
+            "hash": "e8273570f4ca3590bf97ca1365111ca62bd94ddd26133a8c85c36d0278d48fdf"
+        }
+    },
+    "bin": "nerdctl.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/containerd/nerdctl/releases/download/v$version/nerdctl-$version-windows-amd64.tar.gz"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/SHA256SUMS"
+        }
+    }
+}

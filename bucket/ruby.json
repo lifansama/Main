@@ -1,5 +1,5 @@
 {
-    "version": "3.0.3-1",
+    "version": "3.4.1-1",
     "description": "A dynamic programming language with a focus on simplicity and productivity.",
     "homepage": "https://rubyinstaller.org",
     "license": "BSD-3-Clause",
@@ -9,14 +9,14 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-3.0.3-1/rubyinstaller-3.0.3-1-x64.7z",
-            "hash": "30642b62de19f96c9ba3b4082690950bd1971b178527ad5af02accd2bbf0302e",
-            "extract_dir": "rubyinstaller-3.0.3-1-x64"
+            "url": "https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-3.4.1-1/rubyinstaller-3.4.1-1-x64.7z",
+            "hash": "7c32fe445f9a4047fd770ab6862126d69d98c44935bc120b841f93d474711b9a",
+            "extract_dir": "rubyinstaller-3.4.1-1-x64"
         },
         "32bit": {
-            "url": "https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-3.0.3-1/rubyinstaller-3.0.3-1-x86.7z",
-            "hash": "951221954e1207f16e660a64747082455ec337de9472d0e72bcf69c3220ec70e",
-            "extract_dir": "rubyinstaller-3.0.3-1-x86"
+            "url": "https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-3.4.1-1/rubyinstaller-3.4.1-1-x86.7z",
+            "hash": "7d8045a8c8d7ebd79d988e09a1fed123c344084ddfe73cffc9abb9fe7aea156c",
+            "extract_dir": "rubyinstaller-3.4.1-1-x86"
         }
     },
     "post_install": "gem install rake",

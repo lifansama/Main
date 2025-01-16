@@ -1,10 +1,10 @@
 {
-    "version": "6.6.5",
+    "version": "6.6.12",
     "description": "A source code tagging system that works the same way across diverse environments.",
-    "homepage": "http://www.gnu.org/software/global/",
+    "homepage": "https://www.gnu.org/software/global/",
     "license": "GPL-3.0-or-later",
-    "url": "http://adoxa.altervista.org/global/glo665wb.zip",
-    "hash": "17980f90793d336f6f13a4798f958df64e011f0f76b313d85ff22f7171f7f8a4",
+    "url": "http://adoxa.altervista.org/global/glo6612wb.zip",
+    "hash": "43a5684b289dd53de9e252dabf16bab6ac8f147d41d629f2342ecae7f94c63e3",
     "bin": [
         "bin\\global.exe",
         "bin\\gtags.exe",

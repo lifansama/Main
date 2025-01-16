@@ -1,5 +1,5 @@
 {
-    "version": "2.2.0",
+    "version": "2.31.0",
     "description": "The command line client for IBM Cloud",
     "homepage": "https://www.ibm.com/cloud/cli",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://download.clis.cloud.ibm.com/ibm-cloud-cli/2.2.0/binaries/IBM_Cloud_CLI_2.2.0_windows_amd64.zip",
-            "hash": "3efe8ee5875d605a5f6a06c6a854bbfafd18a4724c157395fa86c97f184f616c"
+            "url": "https://download.clis.cloud.ibm.com/ibm-cloud-cli/2.31.0/binaries/IBM_Cloud_CLI_2.31.0_windows_amd64.zip",
+            "hash": "64e7a3b0fad641e4e7c2722d69f493fd1a35e783ad32d7020ff27fe7afd1e215"
         },
         "32bit": {
-            "url": "https://download.clis.cloud.ibm.com/ibm-cloud-cli/2.2.0/binaries/IBM_Cloud_CLI_2.2.0_windows_386.zip",
-            "hash": "fe0eb4c43838825364d4a3f0170c898747d3a1e80188aeed823e588fd160c564"
+            "url": "https://download.clis.cloud.ibm.com/ibm-cloud-cli/2.31.0/binaries/IBM_Cloud_CLI_2.31.0_windows_386.zip",
+            "hash": "ad19071ba641e5d5e0ee81b60d97e69d536be89e606febab58d4e479aefb6e61"
         }
     },
     "extract_dir": "IBM_Cloud_CLI",
