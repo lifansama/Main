@@ -1,16 +1,16 @@
 {
-    "version": "2.34.1.windows.1",
+    "version": "2.48.1.windows.1",
     "description": "Distributed version control system",
     "homepage": "https://gitforwindows.org",
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/git-for-windows/git/releases/download/v2.34.1.windows.1/PortableGit-2.34.1-64-bit.7z.exe#/dl.7z",
-            "hash": "dbf63703f7a37a374591450f1b1466b83ceccb724067521786bf8c5f69ed3ced"
+            "url": "https://github.com/git-for-windows/git/releases/download/v2.48.1.windows.1/PortableGit-2.48.1-64-bit.7z.exe#/dl.7z",
+            "hash": "a4335111b3363871cac632be93d7466154d8eb08782ff55103866b67d6722257"
         },
         "32bit": {
-            "url": "https://github.com/git-for-windows/git/releases/download/v2.34.1.windows.1/PortableGit-2.34.1-32-bit.7z.exe#/dl.7z",
-            "hash": "95e198aaf6e6455910facfc522f7981934822fb362f6605375751b8a9c62db55"
+            "url": "https://github.com/git-for-windows/git/releases/download/v2.48.1.windows.1/PortableGit-2.48.1-32-bit.7z.exe#/dl.7z",
+            "hash": "63ddbc7ea11ea8a1375f39f45d38f928dbec564360ad12dd11d0d649474063a0"
         }
     },
     "bin": [
@@ -18,8 +18,9 @@
         "cmd\\gitk.exe",
         "cmd\\git-gui.exe",
         "git-bash.exe",
+        "usr\\bin\\gpg.exe",
+        "usr\\bin\\gpgconf.exe",
         "usr\\bin\\ssh.exe",
-        "usr\\bin\\sshd.exe",
         "usr\\bin\\scp.exe",
         "usr\\bin\\sftp.exe",
         "usr\\bin\\ssh-add.exe",

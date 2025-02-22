@@ -1,5 +1,5 @@
 {
-    "version": "3.13.0",
+    "version": "3.19.2",
     "description": "NUnit Console runner for NUnit, the most popular and widely used unit testing framework for .NET",
     "homepage": "https://nunit.org/",
     "license": "MIT",
@@ -13,8 +13,8 @@
             "nunit-extension-vs-project-loader"
         ]
     },
-    "url": "https://packages.chocolatey.org/nunit-console-runner.3.13.0.nupkg",
-    "hash": "b8b70fac26e6484a114a475cbddd185400e7f1d64de33414723e2918aa0218fa",
+    "url": "https://packages.chocolatey.org/nunit-console-runner.3.19.2.nupkg",
+    "hash": "d20f1d22aa0745cc2d532bccecd6d690821b5514807c5a08b2e64c8962b6cd97",
     "extract_dir": "tools",
     "post_install": "New-Item -Path \"$dir\\nunit.scoop.addins\" -ItemType File -Value '../../nunit-extension-*/current/     # find extensions installed under scoop' | Out-Null",
     "bin": "nunit3-console.exe",

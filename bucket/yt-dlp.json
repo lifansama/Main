@@ -1,22 +1,28 @@
 {
-    "version": "2021.12.01",
+    "version": "2025.02.19",
     "description": "A youtube-dl fork with additional features and fixes.",
     "homepage": "https://github.com/yt-dlp/yt-dlp",
     "license": "Unlicense",
     "suggest": {
-        "vcredist": "extras/vcredist2010"
+        "ffmpeg": "ffmpeg"
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/yt-dlp/yt-dlp/releases/download/2021.12.01/yt-dlp.exe",
-            "hash": "sha512:1C9C0D2A0D98BDA5F92D2CFDAB0B2C3FF81715B4C390E256FE27999ADF54AB44E7AAF53B12511E4B5BEC9B358291593F531A6257D5D10762B4CD225E506F306A"
+            "url": "https://github.com/yt-dlp/yt-dlp/releases/download/2025.02.19/yt-dlp.exe",
+            "hash": "sha512:77e497d07c9eebe1ddb0728d324a3536e63f4d1b558f3ff57decab928f60780a7fd8f3cbab9b6da2cb5387f27f7e62bbb47e75941a5b7fe1af2ec0f0a1bd4fdb"
         },
         "32bit": {
-            "url": "https://github.com/yt-dlp/yt-dlp/releases/download/2021.12.01/yt-dlp_x86.exe#/yt-dlp.exe",
-            "hash": "sha512:5526E61AFD7FC8ACEEBFDA1E21B197ABB38E6DEAACEB35C9536FF9173F2CEF9D7774066C9D1A5596EF78C5C4CB75F0154EF984E2534E65F2E415DE17DFDF40A6"
+            "url": "https://github.com/yt-dlp/yt-dlp/releases/download/2025.02.19/yt-dlp_x86.exe#/yt-dlp.exe",
+            "hash": "sha512:0baefcbb0603837e7d7240afb5686cc34e22619c8a2a9c0e05391b17fd9544534d5040c6414ea4ec810f7fd42f2abbb8bdf8effcfe0780be8078239a161fc795"
         }
     },
     "bin": "yt-dlp.exe",
+    "pre_install": "if (-not (Test-Path \"$persist_dir\\yt-dlp.conf\")) { New-Item \"$dir\\yt-dlp.conf\" -ItemType file | Out-Null }",
+    "persist": [
+        "yt-dlp.conf",
+        "ytdlp_plugins",
+        "yt-dlp-plugins"
+    ],
     "checkver": "github",
     "autoupdate": {
         "architecture": {

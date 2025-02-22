@@ -1,23 +1,20 @@
 {
-    "version": "1.11.0",
+    "version": "1.12.0",
     "description": "A collection of Avro tools. Data serialization system.",
     "homepage": "https://avro.apache.org/",
     "license": "Apache-2.0",
     "suggest": {
-        "JDK": [
-            "java/oraclejdk",
-            "java/openjdk"
-        ]
+        "JDK": "java/openjdk"
     },
-    "url": "https://apache.org/dist/avro/avro-1.11.0/java/avro-tools-1.11.0.jar#/avro-tools.jar",
-    "hash": "sha512:fd61212a170ff7f91b76f7f3b894feb93e90768d7dcd726a335729355bda04d36d6bee41845bea41fb2f17b0b769fbb473d62caa18b16f20089af1bb035a34fb",
+    "url": "https://dlcdn.apache.org/avro/avro-1.12.0/java/avro-tools-1.12.0.jar#/avro-tools.jar",
+    "hash": "sha512:f626d59b91d8a7e7d75ba39818e84e7734775e87ddc2c58b1608b2850453e4a5e921afa228bae69dfb2e0a52466365926425d4b057a61415faae7318fe3c41cf",
     "bin": "avro-tools.jar",
     "checkver": {
-        "url": "https://avro.apache.org/releases.html",
-        "regex": "Avro ([\\d.]+) Released"
+        "github": "https://github.com/apache/avro",
+        "regex": "releases/tag/release-([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://apache.org/dist/avro/avro-$version/java/avro-tools-$version.jar#/avro-tools.jar",
+        "url": "https://dlcdn.apache.org/avro/avro-$version/java/avro-tools-$version.jar#/avro-tools.jar",
         "hash": {
             "url": "$url.sha512"
         }

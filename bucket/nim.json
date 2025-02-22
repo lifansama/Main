@@ -1,20 +1,22 @@
 {
-    "version": "1.6.0",
+    "version": "2.2.2",
     "description": "A statically typed compiled systems programming language, which combines successful concepts from mature languages like Python, Ada and Modula.",
     "homepage": "https://nim-lang.org/",
     "license": "MIT",
-    "depends": "gcc",
+    "suggest": {
+        "MinGW": "mingw-winlibs"
+    },
     "architecture": {
         "64bit": {
-            "url": "https://nim-lang.org/download/nim-1.6.0_x64.zip",
-            "hash": "52a5d3ae061d97bae68e64e793967a212cac49039c7589c81b78d2ef8f23e035"
+            "url": "https://nim-lang.org/download/nim-2.2.2_x64.zip",
+            "hash": "8359f3cafe874f235f8875ff12f842ece57b139bb8b6971a48f1344b08702901"
         },
         "32bit": {
-            "url": "https://nim-lang.org/download/nim-1.6.0_x32.zip",
-            "hash": "0386847b932942051c43d9297b43ad0c3e066be04dc3e181c7d793e0f5230dae"
+            "url": "https://nim-lang.org/download/nim-2.2.2_x32.zip",
+            "hash": "4c8abf041b09d55b76678100451f3a4abb71ba387e916863931fed6ba1254041"
         }
     },
-    "extract_dir": "nim-1.6.0",
+    "extract_dir": "nim-2.2.2",
     "post_install": [
         "# Copy Nimble package",
         "Copy-Item -Recurse \"$dir\\dist\\nimble\\src\\nimblepkg\" \"$dir\\bin\""
@@ -49,9 +51,9 @@
         }
     },
     "installer": {
-        "script": "add_first_in_path \"$env:USERPROFILE\\.nimble\\bin\" $global"
+        "script": "Add-Path -Path \"$env:USERPROFILE\\.nimble\\bin\" -Global:$global"
     },
     "uninstaller": {
-        "script": "remove_from_path \"$env:USERPROFILE\\.nimble\\bin\" $global"
+        "script": "Remove-Path -Path \"$env:USERPROFILE\\.nimble\\bin\" -Global:$global"
     }
 }

@@ -1,24 +1,33 @@
 {
-    "version": "0.5.0",
+    "version": "25.01.1",
     "description": "A post-modern modal text editor",
     "homepage": "https://helix-editor.com",
     "license": "MPL-2.0",
+    "suggest": {
+        "vcredist": "extras/vcredist2022"
+    },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/helix-editor/helix/releases/download/v0.5.0/helix-v0.5.0-x86_64-windows.zip",
-            "hash": "c3cc06fa601bc91f10de9eb337d10775c964135f8e6ac672251c8e0161c21bde",
-            "extract_dir": "helix-v0.5.0-x86_64-windows"
+            "url": "https://github.com/helix-editor/helix/releases/download/25.01.1/helix-25.01.1-x86_64-windows.zip",
+            "hash": "564055657cf24a4ebb0ef929ee2bc40d379431868e06fd82e41a0def01a5a320",
+            "extract_dir": "helix-25.01.1-x86_64-windows"
         }
     },
-    "bin": "hx.exe",
+    "bin": [
+        "hx.exe",
+        [
+            "hx.exe",
+            "helix"
+        ]
+    ],
     "checkver": {
         "github": "https://github.com/helix-editor/helix"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/helix-editor/helix/releases/download/v$version/helix-v$version-x86_64-windows.zip",
-                "extract_dir": "helix-v$version-x86_64-windows"
+                "url": "https://github.com/helix-editor/helix/releases/download/$version/helix-$version-x86_64-windows.zip",
+                "extract_dir": "helix-$version-x86_64-windows"
             }
         }
     }

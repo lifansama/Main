@@ -1,16 +1,13 @@
 {
-    "version": "0.50",
-    "description": "Inno Setup Unpacker",
-    "homepage": "http://innounp.sourceforge.net",
+    "version": "2.64.1",
+    "description": "Inno Setup Unpacker (Unicode)",
+    "homepage": "https://www.rathlev-home.de/tools/prog-e.html#unpack",
     "license": "GPL-3.0-only",
-    "url": "https://raw.githubusercontent.com/ScoopInstaller/Binary/master/innounp/innounp050.rar",
-    "hash": "sha512:dbbc809308267a866db9d6b751fdeda6d179e1a65d8ddb14bb51984431ae91493f9a76105e1789b245732043a2c696c869ed10964b48cf59f81e55bd52f85330",
+    "url": "https://www.rathlev-home.de/tools/download/innounp-2.zip",
+    "hash": "ab810b0ca774b683843fe674cdf945df9c33d56fbe1c6524422f1b748aafe4dd",
     "bin": "innounp.exe",
-    "checkver": "Version\\s+([\\d.]+)\\s*<br>",
+    "checkver": "executable - version ([\\d.]+)",
     "autoupdate": {
-        "url": "https://raw.githubusercontent.com/ScoopInstaller/Binary/master/innounp/innounp$cleanVersion.rar",
-        "hash": {
-            "url": "$url.sha512"
-        }
+        "url": "https://www.rathlev-home.de/tools/download/innounp-2.zip"
     }
 }

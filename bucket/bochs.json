@@ -1,12 +1,12 @@
 {
-    "version": "2.7",
+    "version": "3.0",
     "description": "IA-32 (x86) PC emulator",
-    "homepage": "http://bochs.sourceforge.net/",
+    "homepage": "https://bochs.sourceforge.io/",
     "license": "LGPL-2.1-only",
     "architecture": {
         "64bit": {
-            "url": "https://downloads.sourceforge.net/project/bochs/bochs/2.7/Bochs-win64-2.7.exe#/dl.7z",
-            "hash": "sha1:a8e4e96716f90a892d23ca4873a7240eea6840bd"
+            "url": "https://downloads.sourceforge.net/project/bochs/bochs/3.0/Bochs-win64-3.0.exe#/dl.7z",
+            "hash": "sha1:1b08609af86ad9744689068f0104fd8d0db491bb"
         }
     },
     "bin": [

@@ -1,16 +1,16 @@
 {
-    "version": "5.20.4",
+    "version": "6.1.1",
     "description": "F# Make, build automation tool for .NET with similar capabilities to make and rake",
     "homepage": "https://fake.build",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/fsharp/FAKE/releases/download/5.20.4/fake-dotnetcore-win7-x64.zip",
-            "hash": "3de7e3a5487f228adf43168e9b1e8a6a6ea78ad1914ff21a599ec0afadd32f5e"
+            "url": "https://github.com/fsharp/FAKE/releases/download/6.1.1/fake-dotnetcore-win7-x64.zip",
+            "hash": "d0a5379b92fe2be228d9d880c419c26c1871aae84080bd312213450ade6da5b0"
         },
         "32bit": {
-            "url": "https://github.com/fsharp/FAKE/releases/download/5.20.4/fake-dotnetcore-win7-x86.zip",
-            "hash": "bc65da6c2011d7b6a045093af2c56f2a50bc992ee09b0f3db331478413cbcef6"
+            "url": "https://github.com/fsharp/FAKE/releases/download/6.1.1/fake-dotnetcore-win7-x86.zip",
+            "hash": "2e7cc433f7d472ce104e308f5edfb72b6d6767e4608d3f822e15aec203839ae3"
         }
     },
     "bin": "fake.exe",
