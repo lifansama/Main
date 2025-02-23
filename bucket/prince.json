@@ -1,5 +1,5 @@
 {
-    "version": "14.2",
+    "version": "15.4.1",
     "description": "Convert HTML to PDF with CSS",
     "homepage": "https://www.princexml.com",
     "license": {
@@ -8,20 +8,20 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://www.princexml.com/download/prince-14.2-win64.zip",
-            "hash": "a61cb7b00bfdd6bee465ce5145c55c09badd5673bff5d0ff6230f78e8f90fd91",
-            "extract_dir": "prince-14.2-win64"
+            "url": "https://www.princexml.com/download/prince-15.4.1-win64.zip",
+            "hash": "205596b526dc0e40dfe2ea8a178e1aaa9402924bb11f9a0f900d28796d1acfca",
+            "extract_dir": "prince-15.4.1-win64"
         },
         "32bit": {
-            "url": "https://www.princexml.com/download/prince-14.2-win32.zip",
-            "hash": "22b25ab7c3772b9fb03591374b35ddf8a9edf8b61812ba6468b0a7fc37d97b08",
-            "extract_dir": "prince-14.2-win32"
+            "url": "https://www.princexml.com/download/prince-15.4.1-win32.zip",
+            "hash": "2d5dd1f40e7cc85ec95d03f049c87a00b7fe82a154ae1dcf8376403bbc00b614",
+            "extract_dir": "prince-15.4.1-win32"
         }
     },
     "bin": "bin\\prince.exe",
     "checkver": {
         "url": "https://www.princexml.com/download/",
-        "regex": ">Download Prince ([\\d.]+)<"
+        "regex": ">Prince ([\\d.]+)<"
     },
     "autoupdate": {
         "architecture": {

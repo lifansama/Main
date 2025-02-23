@@ -1,13 +1,13 @@
 {
-    "version": "1.4.1",
+    "version": "2.0.0",
     "description": "Manage MEGA.nz account and files from command line.",
     "homepage": "https://mega.nz/cmd",
     "license": {
         "identifier": "Freeware",
-        "url": "https://github.com/meganz/MEGAcmd/blob/master/build/installer/terms.txt"
+        "url": "https://github.com/meganz/MEGAcmd/blob/master/LICENSE"
     },
     "url": "https://mega.nz/MEGAcmdSetup.exe#/dl.7z",
-    "hash": "dc67762caa70e514b01b4da331c189e7c1e53051a38cd26b7f7b1e8ed86b0d8a",
+    "hash": "61e49edce275ddf4c014391dd26acb530edcfd5a9a67b53c80f6ceed256d9ece",
     "post_install": [
         "Remove-Item \"$dir\\`$*\", \"$dir\\unins*\" -Recurse",
         "$datapath = if ($global) { $env:APPDATA } else { $env:LOCALAPPDATA }",

@@ -1,34 +1,37 @@
 {
-    "version": "4.4.1-2",
+    "version": "7.1",
     "description": "A complete, cross-platform solution to record, convert and stream audio and video.",
     "homepage": "https://ffmpeg.org",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2021-11-22-12-21/ffmpeg-n4.4.1-2-gcc33e73618-win64-gpl-shared-4.4.zip",
-            "hash": "c41e3a4d39a6752f57e74f39bc32e18fa6646edebe6a9223f8a440f537cba670",
-            "extract_dir": "ffmpeg-n4.4.1-2-gcc33e73618-win64-gpl-shared-4.4"
+            "url": "https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-7.1-full_build-shared.7z",
+            "hash": "01915dfe8591248be20d3d83453c91c1f71cfd10c07460e6fa2d2e667f513606",
+            "extract_dir": "ffmpeg-7.1-full_build-shared"
         }
     },
     "post_install": [
         "# Workaround for https://github.com/ScoopInstaller/Main/issues/2611",
-        "Remove-Item \"$scoopdir\\shims\\ffmpeg.ps1\", \"$scoopdir\\shims\\ffplay.ps1\", \"$scoopdir\\shims\\ffprobe.ps1\""
+        "Remove-Item \"$scoopdir\\shims\\ffmpeg.ps1\", \"$scoopdir\\shims\\ffplay.ps1\", \"$scoopdir\\shims\\ffprobe.ps1\" -ErrorAction SilentlyContinue"
     ],
+    "persist": "fonts",
     "bin": [
         "bin\\ffmpeg.exe",
         "bin\\ffplay.exe",
         "bin\\ffprobe.exe"
     ],
     "checkver": {
-        "github": "https://github.com/BtbN/FFmpeg-Builds",
-        "regex": "/autobuild-(?<time>[\\d-]+)/ffmpeg-n(?<version>[\\d.]+)-(?<commit>\\d+)-g(?<hash>[a-z\\d]+)-win64-gpl-shared-[\\d.]+\\.zip",
-        "replace": "${version}-${commit}"
+        "url": "https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-full-shared.7z.ver",
+        "regex": "([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-$matchTime/ffmpeg-n$version-g$matchHash-win64-gpl-shared-$majorVersion.$minorVersion.zip",
-                "extract_dir": "ffmpeg-n$version-g$matchHash-win64-gpl-shared-$majorVersion.$minorVersion"
+                "url": "https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-$version-full_build-shared.7z",
+                "hash": {
+                    "url": "https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-$version-full_build-shared.7z.sha256"
+                },
+                "extract_dir": "ffmpeg-$version-full_build-shared"
             }
         }
     }

@@ -1,18 +1,18 @@
 {
-    "version": "1.7.0",
+    "version": "1.11.3",
     "description": "A programming language that is a fresh approach to technical computing.",
     "homepage": "https://julialang.org",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://julialang-s3.julialang.org/bin/winnt/x64/1.7/julia-1.7.0-win64.zip",
-            "hash": "f2a1fa874baffde9ed856f20cd6eaa20020727ea520363baf78520304a0b2d39",
-            "extract_dir": "julia-1.7.0"
+            "url": "https://julialang-s3.julialang.org/bin/winnt/x64/1.11/julia-1.11.3-win64.zip",
+            "hash": "dc15c611c6bdca2ffe3ee40c70f29a28cc6de18cd00b26f4a3d0f5dc1997152c",
+            "extract_dir": "julia-1.11.3"
         },
         "32bit": {
-            "url": "https://julialang-s3.julialang.org/bin/winnt/x86/1.7/julia-1.7.0-win32.zip",
-            "hash": "98a808e34edf2fe2b9599a04c67d8197f0bd11cc51d5df213dcdd576ca5ab7ce",
-            "extract_dir": "julia-1.7.0"
+            "url": "https://julialang-s3.julialang.org/bin/winnt/x86/1.11/julia-1.11.3-win32.zip",
+            "hash": "468fe30cd73b3204f8e81997c9c47685e49b30eabbaaf25f4d1e3d0588c5b5c1",
+            "extract_dir": "julia-1.11.3"
         }
     },
     "bin": "bin\\julia.exe",

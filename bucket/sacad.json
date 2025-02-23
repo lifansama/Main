@@ -1,17 +1,17 @@
 {
-    "version": "2.4.0",
+    "version": "2.8.0",
     "description": "A command line tool to download album covers without manual intervention.",
     "homepage": "https://github.com/desbma/sacad",
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/desbma/sacad/releases/download/2.4.0/sacad_win64.7z",
-            "hash": "9e134426708ae846f5248aea57c498605c7e7ef9f927625c9c3bd4065f3db585",
+            "url": "https://github.com/desbma/sacad/releases/download/2.8.0/sacad_win64.7z",
+            "hash": "64e8ba4c06b09961c6f5e2c4248eb6ea1cb622ad38fece5391afabba64faa7dd",
             "extract_dir": "sacad-win64"
         },
         "32bit": {
-            "url": "https://github.com/desbma/sacad/releases/download/2.4.0/sacad_win32.7z",
-            "hash": "3f21fc37009233fc3f57028436a4d88442dd196d5f9c290047d0146ef721386c",
+            "url": "https://github.com/desbma/sacad/releases/download/2.8.0/sacad_win32.7z",
+            "hash": "3e4665daaede414141b9f5bec5a3617893e039e554115256a27f99b64da71898",
             "extract_dir": "sacad-win32"
         }
     },

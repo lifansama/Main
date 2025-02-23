@@ -1,30 +1,34 @@
 {
-    "version": "1.20.2",
-    "description": "Powerful duplicate file finder (enhanced fork of fdupes)",
-    "homepage": "https://github.com/jbruchon/jdupes",
+    "version": "1.28.0",
+    "description": "A powerful duplicate file finder",
+    "homepage": "https://codeberg.org/jbruchon/jdupes",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/jbruchon/jdupes/releases/download/v1.20.2/jdupes-1.20.2-win64.zip",
-            "hash": "7574c599c0c17d68aa54d3b1a6972c7542f3096fddc55e2635321f78b8a7ca65",
-            "extract_dir": "jdupes-1.20.2-win64"
+            "url": "https://codeberg.org/jbruchon/jdupes/releases/download/v1.28.0/jdupes-1.28.0-win64.zip",
+            "hash": "e41494a232060eb9003a7cfb1e90f56773d44e9376c388da3c3013bec17d64bf",
+            "extract_dir": "jdupes-1.28.0-win64"
         },
         "32bit": {
-            "url": "https://github.com/jbruchon/jdupes/releases/download/v1.20.2/jdupes-1.20.2-win32.zip",
-            "hash": "95801eb97753e6ef1cff2b0298c4f3849a64e2bd10603056dea1ffc36acd061d",
-            "extract_dir": "jdupes-1.20.2-win32"
+            "url": "https://codeberg.org/jbruchon/jdupes/releases/download/v1.28.0/jdupes-1.28.0-win32.zip",
+            "hash": "6d979737be54e1c9e5bc3b4064d37203d275d4c4538dc75848d63c17c1bd6ac6",
+            "extract_dir": "jdupes-1.28.0-win32"
         }
     },
     "bin": "jdupes.exe",
-    "checkver": "github",
+    "checkver": {
+        "url": "https://codeberg.org/api/v1/repos/jbruchon/jdupes/releases/latest",
+        "jsonpath": "$.tag_name",
+        "regex": "v([\\d.]+)"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/jbruchon/jdupes/releases/download/v$version/jdupes-$version-win64.zip",
+                "url": "https://codeberg.org/jbruchon/jdupes/releases/download/v$version/jdupes-$version-win64.zip",
                 "extract_dir": "jdupes-$version-win64"
             },
             "32bit": {
-                "url": "https://github.com/jbruchon/jdupes/releases/download/v$version/jdupes-$version-win32.zip",
+                "url": "https://codeberg.org/jbruchon/jdupes/releases/download/v$version/jdupes-$version-win32.zip",
                 "extract_dir": "jdupes-$version-win32"
             }
         }

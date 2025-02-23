@@ -1,18 +1,18 @@
 {
-    "version": "1.12.0",
+    "version": "1.19.0",
     "description": "A command-line benchmarking tool",
     "homepage": "https://github.com/sharkdp/hyperfine",
-    "license": "Apache-2.0",
+    "license": "Apache-2.0|MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/sharkdp/hyperfine/releases/download/v1.12.0/hyperfine-v1.12.0-x86_64-pc-windows-msvc.zip",
-            "hash": "ae92a684d0f72c209eab8fe320cfea877383605a7ed18d72e3096b938c28be4b",
-            "extract_dir": "hyperfine-v1.12.0-x86_64-pc-windows-msvc"
+            "url": "https://github.com/sharkdp/hyperfine/releases/download/v1.19.0/hyperfine-v1.19.0-x86_64-pc-windows-msvc.zip",
+            "hash": "3e488eea6d930f54a43b1b2c8c01226286c7c01b5ba7211d7beb9029918a616c",
+            "extract_dir": "hyperfine-v1.19.0-x86_64-pc-windows-msvc"
         },
         "32bit": {
-            "url": "https://github.com/sharkdp/hyperfine/releases/download/v1.12.0/hyperfine-v1.12.0-i686-pc-windows-msvc.zip",
-            "hash": "a941b663bf37130483da27ea60e0099089e265a12727256be8380af1bd7abaeb",
-            "extract_dir": "hyperfine-v1.12.0-i686-pc-windows-msvc"
+            "url": "https://github.com/sharkdp/hyperfine/releases/download/v1.19.0/hyperfine-v1.19.0-i686-pc-windows-msvc.zip",
+            "hash": "b649e7f0ed2b02d2f8977cb27fbb080ccd9bfc53ffb9dfebbe9fdee5e0f4d419",
+            "extract_dir": "hyperfine-v1.19.0-i686-pc-windows-msvc"
         }
     },
     "bin": "hyperfine.exe",

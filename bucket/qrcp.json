@@ -1,16 +1,16 @@
 {
-    "version": "0.8.4",
+    "version": "0.11.3",
     "description": "Transfers files over wifi from computer to mobile device by scanning a QR code without leaving the terminal.",
-    "homepage": "https://claudiodangelis.com/qrcp/",
+    "homepage": "https://qrcp.sh/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/claudiodangelis/qrcp/releases/download/0.8.4/qrcp_0.8.4_Windows_x86_64.tar.gz",
-            "hash": "ded5a28d9cfe179757d04211a4574fdb7a5a84d9d7a9f125985ae470d6c090c8"
+            "url": "https://github.com/claudiodangelis/qrcp/releases/download/0.11.3/qrcp_0.11.3_windows_amd64.tar.gz",
+            "hash": "9eb907d1874966d475df66d5e2494b9280cced318a3260d9e8638c037d3981b7"
         },
         "32bit": {
-            "url": "https://github.com/claudiodangelis/qrcp/releases/download/0.8.4/qrcp_0.8.4_Windows_i386.tar.gz",
-            "hash": "3131bd28729377ddeb42e73699ece1f40b5ed02b71ba70fec105788961b56a44"
+            "url": "https://github.com/claudiodangelis/qrcp/releases/download/0.11.3/qrcp_0.11.3_windows_386.tar.gz",
+            "hash": "9d902324724c00d5eb1d9d15f30d986458713e8429e312fa9c9738adffa2edc0"
         }
     },
     "bin": "qrcp.exe",
@@ -20,10 +20,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/claudiodangelis/qrcp/releases/download/$version/qrcp_$version_Windows_x86_64.tar.gz"
+                "url": "https://github.com/claudiodangelis/qrcp/releases/download/$version/qrcp_$version_windows_amd64.tar.gz"
             },
             "32bit": {
-                "url": "https://github.com/claudiodangelis/qrcp/releases/download/$version/qrcp_$version_Windows_i386.tar.gz"
+                "url": "https://github.com/claudiodangelis/qrcp/releases/download/$version/qrcp_$version_windows_386.tar.gz"
             }
         },
         "hash": {

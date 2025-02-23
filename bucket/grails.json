@@ -1,23 +1,20 @@
 {
-    "version": "5.0.2",
+    "version": "6.2.3",
     "description": "A powerful Groovy-based web application framework for the JVM built on top of Spring Boot.",
     "homepage": "https://grails.org",
     "license": "Apache-2.0",
     "suggest": {
-        "JDK": [
-            "java/oraclejdk",
-            "java/openjdk"
-        ]
+        "JDK": "java/openjdk"
     },
-    "url": "https://github.com/grails/grails-core/releases/download/v5.0.2/grails-5.0.2.zip",
-    "hash": "7ab83eae780db077724fc69425d43429f1af627a2ca83ddb527b4b79bfe88dd5",
-    "extract_dir": "grails-5.0.2",
+    "url": "https://github.com/grails/grails-core/releases/download/v6.2.3/grails-6.2.3.zip",
+    "hash": "b41e95efad66e2b93b4e26664f746a409ea70d43548e6c011e9695874a710b09",
+    "extract_dir": "grails-6.2.3",
     "bin": "bin\\grails.bat",
     "env_set": {
         "GRAILS_HOME": "$dir"
     },
     "checkver": {
-        "url": "https://github.com/grails/grails-core/releases",
+        "url": "https://api.github.com/repositories/512295/releases",
         "regex": "/grails-([\\d.]+)\\.zip"
     },
     "autoupdate": {
